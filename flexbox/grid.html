@@ -5,54 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            color: blue;
-            width: 50%;
-            margin: 150px;
-            padding: 100px;
-            border: 1px solid black;
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .container{
+            width: 100%;
+            height: auto;
+            background-color: greenyellow;
+            margin: auto;
         }
         .product-grid{
-            display: flex;
-            flex-wrap: wrap;
-            align-content: stretch;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'item1 item1 item2'
+                                'item1 item1 item3'
+                                'item4 item5 item6'
+                                'item4 item7 item8'  ;
+                                grid-gap: 10px;
+            
         }
-        .product{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 15px;
+        
+        .item{
+            min-height: 12rem;
+            border: 1px solid black;
+            
         }
+     
+        .item1{
+            grid-area: 'item1';
+            background-color: blue;
+        }
+        .item2{
+            grid-area: 'item2';
+            background-color: beige;
+        }
+        .item3{
+            grid-area: 'item3';
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
-     <div class="product-grid">
-        <div class="product">
-            <img src="" alt="image">
-            <p class="description">Four square diamond t-shirt</p>
-            <p class="price">50$</p>
+    <div class="container">
+        <div class="product-grid"> 
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+            <div class="item item7"></div>
+            <div class="item item8"></div>     
         </div>
-        <div class="product">
-            <img src="" alt="image">
-            <p class="description">Neon t-shirt</p>
-            <p class="price">20$</p>
-        </div>
-        <div class="product">
-            <img src="" alt="image">
-            <p class="description">Elvish t-shirt</p>
-            <p class="price">25$</p>
-        </div>
-        <div class="product">
-            <img src="" alt="image">
-            <p class="description">Four black shirt</p>
-            <p class="price">25$</p>
-        </div>
-        <div class="product">
-            <img src="" alt="image">
-            <p class="description"> square diamond t-shirt</p>
-            <p class="price">15$</p>
-        </div>
-     </div>
+
+
+
+
+
+
+    </div>
 </body>
 </html>
