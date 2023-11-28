@@ -28,7 +28,7 @@ header{
     border-radius: 8px;
 }
 
-.result{
+.display{
     /* border: 1px solid white; */
     width:350px;
     height:100px ;
@@ -36,6 +36,21 @@ header{
     text-align: right;
     border-bottom: 1px solid rgb(248, 248, 248);
 }
+.display input {
+    width:200px;
+    top: 60px;
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    background: none;
+    margin-top: 60px;
+    margin-right: 12px;
+    border: none;
+    text-align: end;
+
+}
+
+
 
 .number-box{
     width: 340px;
@@ -58,4 +73,30 @@ header{
     border-radius: 50px;
     margin: 6px;
     margin-right: 2px;
+}
+/* //removing inbuilt style from button // */
+/* button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+} */
+
+#equal{
+    background-color: orange;
+    color: black;
+}
+
+.result{
+    color: orange;
+}
+
+
+input{
+    border: none;
+    background: none;
+    font-size: x-large;
 }
